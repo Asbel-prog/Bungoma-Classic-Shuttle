@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bungoma Classic Shuttle</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #0a3d62;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+header h1 {
+    color: #2ecc71;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: url('shuttle.jpg') no-repeat center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    color: white;
+}
+
+.hero-box {
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* SECTION */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #f4f4f4;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* BOOKING */
+.booking input, .booking select {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+}
+
+/* MAP */
+iframe {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #0a3d62;
+    color: white;
+    padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Bungoma Classic Shuttle</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#booking">Booking</a>
+        <a href="#locations">Locations</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-box">
+        <h2>Safe & Comfortable Shuttle Services</h2>
+        <p>Bungoma • Kitale • Eldoret</p>
+        <a class="btn" href="tel:0714751483">📞 Call Now</a>
+        <br>
+        <a class="btn" href="https://wa.me/254714751483?text=Hello%20I%20want%20to%20book%20a%20seat">💬 WhatsApp</a>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">Passenger Transport</div>
+        <div class="card">Parcel Delivery</div>
+        <div class="card">Experienced Drivers</div>
+    </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+    <h2>Departure Times</h2>
+    <p>10:00 AM | 12:00 PM | 3:00 PM | 6:00 PM | 8:00 PM</p>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+    <h2>Book a Ride</h2>
+    <div class="booking">
+        <form>
+            <select>
+                <option>Select Route</option>
+                <option>Bungoma → Kitale</option>
+                <option>Bungoma → Eldoret</option>
+                <option>Kitale → Bungoma</option>
+                <option>Eldoret → Bungoma</option>
+            </select><br>
+
+            <input type="text" placeholder="Your Name"><br>
+            <input type="tel" placeholder="Phone Number"><br>
+
+            <button class="btn">Book Now</button>
+        </form>
+    </div>
+</section>
+
+<!-- LOCATIONS -->
+<section id="locations">
+    <h2>Our Locations</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Bungoma Stage</h3>
+            <p>Near Co-op Bank</p>
+            <iframe src="https://www.google.com/maps?q=Bungoma&output=embed" width="100%" height="200"></iframe>
+        </div>
+
+        <div class="card">
+            <h3>Kitale Stage</h3>
+            <p>Kitale Town</p>
+            <iframe src="https://www.google.com/maps?q=Kitale&output=embed" width="100%" height="200"></iframe>
+        </div>
+
+        <div class="card">
+            <h3>Eldoret Stage</h3>
+            <p>Eldoret Town</p>
+            <iframe src="https://www.google.com/maps?q=Eldoret&output=embed" width="100%" height="200"></iframe>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>📞 0714751483 | © 2026 Bungoma Classic Shuttle</p>
+</footer>
+
+</body>
+</html>
